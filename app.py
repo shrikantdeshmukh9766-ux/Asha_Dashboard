@@ -243,7 +243,11 @@ hr {
 # =====================
 # CONSTANTS
 # =====================
-TOKEN     = st.secrets["KOBO_TOKEN"]
+try:
+    TOKEN = st.secrets["KOBO_TOKEN"]
+except KeyError:
+    st.error("⚠️ KOBO_TOKEN secret सापडला नाही. Streamlit Cloud → Settings → Secrets मध्ये KOBO_TOKEN जोडा.")
+    st.stop()
 BASE_URL  = "https://kobo.humanitarianresponse.info/api/v2"
 asset_uid = "acok7AtCpiYk5NZ4d7tvEn"
 MASTER_URL = "https://raw.githubusercontent.com/shrikantdeshmukh9766-ux/STATSOLUTION/main/Participant%20list.xlsx"

@@ -245,7 +245,7 @@ hr {
 # =====================
 TOKEN = "23801d339dd6d16509a79250731f126401d5f7a3"
 BASE_URL  = "https://kobo.humanitarianresponse.info/api/v2"
-asset_uid = "acok7AtCpiYk5NZ4d7tvEn"
+asset_uid = "aGGHAxMxBz67ScRohaf3vw"
 MASTER_URL = "https://raw.githubusercontent.com/shrikantdeshmukh9766-ux/Asha_Dashboard/main/Participant%20list.xlsx"
 
 # =====================
